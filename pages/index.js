@@ -10,13 +10,16 @@ gsap.registerPlugin(CSSRulePlugin);
 // }
 
 export default function Home() {
-  
-  const [check, setcheck] = useState(false);
+  const [newValue, setNewValue] = useState();
+  const [check, setcheck] = useState(true);
+  const [check1, setcheck1] = useState(true);
   const [first, setFirst] = useState(false);
   const [second, setSecond] = useState(false);
   const [third, setthird] = useState(false);
   const [fourth, setFourth] = useState(false);
   const [fivth, setFivth] = useState(false);
+  const [idCheck, setIdCheck] = useState();
+
   const btnRefs = useRef([]);
   btnRefs.current = [];
 
@@ -38,112 +41,393 @@ export default function Home() {
     }
   ];
 
-
   let rule;
 
   if (typeof window !== 'undefined') {
     rule = CSSRulePlugin.getRule("span:after");
   }
 
-  const changePlace = (id) =>{
-    let value =   btnRefs.current[id] 
-    if(check === true) {
-      setcheck(!check);
+  const changePlace = (id) => {
+
+    let value = btnRefs.current[id];
+    let value1 = btnRefs.current[0];
+    let value2 = btnRefs.current[1];
+    let value3 = btnRefs.current[2];
+    let value4 = btnRefs.current[3];
+    let value5 = btnRefs.current[4];
+
+    if (check) {
+      if (idCheck == null) {
+        setIdCheck(id);
+      }
+      if (id == 0) {
+        setIdCheck(id);
+        if (id == idCheck) {
+          let value = btnRefs.current[id]
+          TweenMax.to(
+            value,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          setIdCheck(null);
+          return;
+        } else {
+          TweenMax.to(
+            value,
+            .8,
+            {
+              y: -150,
+              x: 435,
+              delay: .1
+            }
+          )
+
+          TweenMax.to(
+            value2,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+
+          TweenMax.to(
+            value3,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+
+          TweenMax.to(
+            value4,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          TweenMax.to(
+            value5,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          return;
+        }
+
+        // setcheck(!check);
+        // setcheck1(false);
+
+      }
+
+      if (id == 1) {
+        setIdCheck(id);
+        if (id == idCheck) {
+          let value = btnRefs.current[id]
+          TweenMax.to(
+            value,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          setIdCheck(null);
+          return;
+        } else {
+          TweenMax.to(
+            value,
+            .8,
+            {
+              y: -150,
+              x: 322,
+              delay: .1
+            }
+          )
+          TweenMax.to(
+            value1,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          TweenMax.to(
+            value3,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+
+          TweenMax.to(
+            value4,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          TweenMax.to(
+            value5,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          // setcheck(!check);
+          return;
+        }
+      }
+
+      if (id == 2) {
+        setIdCheck(id);
+        if (id == idCheck) {
+          let value = btnRefs.current[id]
+          TweenMax.to(
+            value,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          setIdCheck(null);
+          return;
+        }
+        else {
+          TweenMax.to(
+            value,
+            .8,
+            {
+              y: -150,
+              x: 215,
+              delay: .1
+            }
+          )
+
+          TweenMax.to(
+            value1,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+
+          TweenMax.to(
+            value2,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+
+          TweenMax.to(
+            value4,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          TweenMax.to(
+            value5,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          return;
+        }
+      }
+
+      if (id == 3) {
+        setIdCheck(id);
+        if (id == idCheck) {
+          let value = btnRefs.current[id]
+          TweenMax.to(
+            value,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          setIdCheck(null);
+          return;
+        }
+        else {
+          TweenMax.to(
+            value,
+            .8,
+            {
+              y: -150,
+              x: 90,
+              delay: .1
+            }
+          )
+          TweenMax.to(
+            value1,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+
+          TweenMax.to(
+            value2,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+
+          )
+          TweenMax.to(
+            value5,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+
+          TweenMax.to(
+            value3,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          // setcheck(!check);
+          return;
+        }
+      }
+
+      if (id == 4) {
+        setIdCheck(id);
+        if (id == idCheck) {
+          let value = btnRefs.current[id]
+          TweenMax.to(
+            value,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+          setIdCheck(null);
+          return;
+        } else {
+          TweenMax.to(
+            value,
+            .8,
+            {
+              y: -150,
+              x: 0,
+              delay: .1
+            }
+          )
+          TweenMax.to(
+            value1,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+  
+          TweenMax.to(
+            value2,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+  
+          TweenMax.to(
+            value3,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+          )
+  
+          TweenMax.to(
+            value4,
+            .8,
+            {
+              y: 0,
+              x: 0,
+              delay: .1
+            }
+  
+          )
+          return;
+        }
+      }
     }
-    if(!check) {
-      if(id == 0) {
-        TweenMax.to(
-          value,
-          .8,
-          {
-            y: -150,
-            x: 435,
-            delay:.3
-          }
-        )
-        setcheck(!check);
-          return;
-      }
 
-      if(id == 1) {
-        TweenMax.to(
-          value,
-          .8,
-          {
-            y: -150,
-            x: 322,
-            delay:.3
-          }
-        )
-        setcheck(!check);
-          return;
-      }
-
-      if(id == 2) {
-        TweenMax.to(
-          value,
-          .8,
-          {
-            y: -150,
-            x: 215,
-            delay:.3
-          }
-        )
-        setcheck(!check);
-          return;
-      }
-
-      if(id == 3) {
-        TweenMax.to(
-          value,
-          .8,
-          {
-            y: -150,
-            x: 90,
-            delay:.3
-          }
-        )
-        setcheck(!check);
-          return;
-      }
-
-      if(id == 4) {
-        TweenMax.to(
-          value,
-          .8,
-          {
-            y: -150,
-            x: 0,
-            delay:.3
-          }
-        )
-        setcheck(!check);
-          return;
-      }
-      
-    }
-
-    if(check) {
-      let value =   btnRefs.current[id] 
+    else {
+      let value = btnRefs.current[id]
       TweenMax.to(
         value,
         .8,
         {
           y: 0,
-          x:0,
-          delay:.3
+          x: 0,
+          delay: .1
         }
       )
       setcheck(!check);
-        return;
+      return;
     }
   }
 
   const addToRef = (el) => {
-    if(el && !btnRefs.current.includes(el)) {
+    if (el && !btnRefs.current.includes(el)) {
       btnRefs.current.push(el)
     }
-    console.log('The btnRef array is', btnRefs.current)
   }
 
   return (
@@ -163,24 +447,24 @@ export default function Home() {
                 </h2>
             </div>
             <div className={`${styles._border}`}>
-              <span className= "border-b-2 px-10"></span>
+              <span className="border-b-2 px-10"></span>
             </div>
           </div>
           <div className="flex flex-row">
-              {
-              buttons.map((item,id)=>( 
+            {
+              buttons.map((item, id) => (
                 <div ref={addToRef}>
                   <button
                     className="bg-white border ml-2 mt-5 focus-within:outline-none px-6 py-2 rounded-2xl"
-                    onClick={()=>changePlace(id)}
+                    onClick={() => changePlace(id)}
                   >
                     {item.data}
                   </button>
                 </div>
               ))
-            }  
+            }
           </div>
-        </div>   
+        </div>
       </main>
     </div>
   )
