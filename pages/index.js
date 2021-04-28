@@ -10,7 +10,11 @@ gsap.registerPlugin(CSSRulePlugin);
 // }
 
 export default function Home() {
-  const [refArray,setRefArray] = useState([]);
+  
+
+  const btnRefs = useRef([]);
+  btnRefs.current = [];
+
   const buttons = [
     {
       data: 'Microwave'
@@ -29,26 +33,31 @@ export default function Home() {
     }
   ];
 
-  let check = useRef(null);
 
-
-  
   let rule;
 
   if (typeof window !== 'undefined') {
     rule = CSSRulePlugin.getRule("span:after");
   }
 
-  const changePlace = () =>{
-    // let value= refArray[i];
+  const changePlace = (id) =>{
+    let value =   btnRefs.current[id] 
+    debugger
     TweenMax.to(
-      check,
+      value,
       .8,
       {
         y: 12,
         delay:.3
       }
     )
+  }
+
+  const addToRef = (el) => {
+    if(el && !btnRefs.current.includes(el)) {
+      btnRefs.current.push(el)
+    }
+    console.log('The btnRef array is', btnRefs.current)
   }
 
   return (
@@ -74,13 +83,10 @@ export default function Home() {
           <div className="flex flex-row">
               {
               buttons.map((item,id)=>( 
-                <div>
+                <div ref={addToRef}>
                   <button
-                  
-                    ref={ref=> {check = ref }}
-                  
                     className="bg-white border ml-2 mt-5 focus-within:outline-none px-6 py-2 rounded-2xl"
-                    onClick={changePlace}
+                    onClick={()=>changePlace(id)}
                   >
                     {item.data}
                   </button>
@@ -88,7 +94,7 @@ export default function Home() {
               ))
             }  
           </div>
-        </div>
+        </div>   
       </main>
     </div>
   )
