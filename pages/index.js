@@ -11,7 +11,7 @@ gsap.registerPlugin(CSSRulePlugin);
 
 export default function Home() {
   
-
+  const [check, setcheck] = useState(false);
   const btnRefs = useRef([]);
   btnRefs.current = [];
 
@@ -41,15 +41,33 @@ export default function Home() {
   }
 
   const changePlace = (id) =>{
-    let value =   btnRefs.current[id] 
-    TweenMax.to(
-      value,
-      .8,
-      {
-        y: 12,
-        delay:.3
-      }
-    )
+    if(!check) {
+      let value =   btnRefs.current[id] 
+      TweenMax.to(
+        value,
+        .8,
+        {
+          y: -150,
+          delay:.3
+        }
+      )
+      setcheck(!check);
+        return;
+    }
+
+    if(check) {
+      let value =   btnRefs.current[id] 
+      TweenMax.to(
+        value,
+        .8,
+        {
+          y: 0,
+          delay:.3
+        }
+      )
+      setcheck(!check);
+        return;
+    }
   }
 
   const addToRef = (el) => {
