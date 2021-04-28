@@ -42,7 +42,6 @@ export default function Home() {
 
   const changePlace = (id) =>{
     let value =   btnRefs.current[id] 
-    debugger
     TweenMax.to(
       value,
       .8,
