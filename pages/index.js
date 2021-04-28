@@ -12,6 +12,11 @@ gsap.registerPlugin(CSSRulePlugin);
 export default function Home() {
   
   const [check, setcheck] = useState(false);
+  const [first, setFirst] = useState(false);
+  const [second, setSecond] = useState(false);
+  const [third, setthird] = useState(false);
+  const [fourth, setFourth] = useState(false);
+  const [fivth, setFivth] = useState(false);
   const btnRefs = useRef([]);
   btnRefs.current = [];
 
@@ -41,18 +46,81 @@ export default function Home() {
   }
 
   const changePlace = (id) =>{
-    if(!check) {
-      let value =   btnRefs.current[id] 
-      TweenMax.to(
-        value,
-        .8,
-        {
-          y: -150,
-          delay:.3
-        }
-      )
+    let value =   btnRefs.current[id] 
+    if(check === true) {
       setcheck(!check);
-        return;
+    }
+    if(!check) {
+      if(id == 0) {
+        TweenMax.to(
+          value,
+          .8,
+          {
+            y: -150,
+            x: 435,
+            delay:.3
+          }
+        )
+        setcheck(!check);
+          return;
+      }
+
+      if(id == 1) {
+        TweenMax.to(
+          value,
+          .8,
+          {
+            y: -150,
+            x: 322,
+            delay:.3
+          }
+        )
+        setcheck(!check);
+          return;
+      }
+
+      if(id == 2) {
+        TweenMax.to(
+          value,
+          .8,
+          {
+            y: -150,
+            x: 215,
+            delay:.3
+          }
+        )
+        setcheck(!check);
+          return;
+      }
+
+      if(id == 3) {
+        TweenMax.to(
+          value,
+          .8,
+          {
+            y: -150,
+            x: 90,
+            delay:.3
+          }
+        )
+        setcheck(!check);
+          return;
+      }
+
+      if(id == 4) {
+        TweenMax.to(
+          value,
+          .8,
+          {
+            y: -150,
+            x: 0,
+            delay:.3
+          }
+        )
+        setcheck(!check);
+          return;
+      }
+      
     }
 
     if(check) {
@@ -62,6 +130,7 @@ export default function Home() {
         .8,
         {
           y: 0,
+          x:0,
           delay:.3
         }
       )
