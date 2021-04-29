@@ -8,7 +8,7 @@ import {ScrollTrigger} from 'gsap/dist/scrollTrigger';
 
 if(typeof window !== 'undefined') {
   gsap.registerPlugin(CSSRulePlugin);
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
 }
 
 export default function Home() {
