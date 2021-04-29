@@ -4,10 +4,12 @@ import styles from '../styles/Home.module.css'
 import { TweenMax, Power3, gsap } from 'gsap';
 // import  CSSRulePlugin  from 'gsap/CSSRulePlugin';
 import { CSSRulePlugin } from "gsap/dist/CSSRulePlugin";
+import {ScrollTrigger} from 'gsap/dist/scrollTrigger';
 
-// /if(typeof window !== 'undefined') {
-gsap.registerPlugin(CSSRulePlugin);
-// }
+if(typeof window !== 'undefined') {
+  gsap.registerPlugin(CSSRulePlugin);
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 export default function Home() {
   const [newValue, setNewValue] = useState();
@@ -58,42 +60,59 @@ export default function Home() {
       value1,
       {
         delay: .7,
-        y: -10, 
-        ease: Power3.easeInOut
+        // y: -10, 
+        ease: Power3.easeInOut,
+        y:-200,
+        rotate: 360,
+        duration: 3,
+        // ScrollTrigger: {
+        //   trigger: "value1",
+        //   toggleActions: "restart pause resume" 
+        // } 
       }
     )
     TweenMax.to(
       value2,
       {
         delay: .8,
-        y: -10, 
-        ease: Power3.easeInOut
+        // y: -10, 
+        ease: Power3.easeInOut,
+        y:-200,
+        rotate: 360,
+        duration: 3,
       }
     )
     TweenMax.to(
       value3,
       {
         delay: .9,
-        y: -10, 
-        ease: Power3.easeInOut
+        // y: -10, 
+        // ease: Power3.easeInOut
+        y:-200,
+        rotate: 360,
+        duration: 3,
       }
     )
     TweenMax.to(
       value4,
       {
         delay: .10,
-        y: -10, 
-        ease: Power3.easeInOut
-
+        // y: -10, 
+        // ease: Power3.easeInOut
+        y:-200,
+        rotate: 360,
+        duration: 3,
       }
     )
     TweenMax.to(
       value5,
       {
         delay: .11,
-        y: -10, 
-        ease: Power3.easeInOut
-
+        // y: -10, 
+        // ease: Power3.easeInOut
+        y:-200,
+        rotate: 360,
+        duration: 3,
       }
     )
 
@@ -121,7 +140,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
             }
           )
@@ -132,7 +151,7 @@ export default function Home() {
             value,
             {
               duration: .4,
-              y: -125,
+              y: -325,
               x: 392,
               ease: Power3.easeInOut 
             }
@@ -143,7 +162,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
             }
           )
@@ -153,7 +172,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -164,7 +183,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -174,7 +193,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -196,7 +215,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -209,7 +228,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: -126,
+              y: -326,
               x: 272,
               
             }
@@ -219,9 +238,8 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
-              x: 0,
-              
+              y: -200,
+              x: 0,              
             }
           )
           TweenMax.to(
@@ -229,7 +247,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -240,7 +258,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -250,7 +268,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -269,7 +287,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -283,7 +301,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: -126,
+              y: -326,
               x: 155,
               
             }
@@ -294,7 +312,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -305,7 +323,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -316,7 +334,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -326,7 +344,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -344,7 +362,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -358,8 +376,8 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: -126,
-              x: 44,
+              y: -326,
+              x: 40,
               
             }
           )
@@ -368,7 +386,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -379,7 +397,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -390,7 +408,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -401,7 +419,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -420,7 +438,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -433,8 +451,8 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: -126,
-              x: -55,
+              y: -326,
+              x: -50,
               
             }
           )
@@ -443,7 +461,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -454,7 +472,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -465,7 +483,7 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
+              y: -200,
               x: 0,
               
             }
@@ -476,11 +494,9 @@ export default function Home() {
             {
               duration: .4,
               ease: Power3.easeInOut,
-              y: 0,
-              x: 0,
-              
+              y: -200,
+              x: 0,              
             }
-  
           )
           return;
         }
@@ -530,7 +546,7 @@ export default function Home() {
               <span className="border-b-2 ml-4 px-14"></span>
             </div>
           </div>
-          <div className="flex flex-row mt-6">
+          <div className="flex flex-row mt-56">
             {
               buttons.map((item, id) => (
                 <div ref={addToRef}>
