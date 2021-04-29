@@ -66,11 +66,10 @@ export default function Home() {
           let value = btnRefs.current[id]
           TweenMax.to(
             value,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           setIdCheck(null);
@@ -78,50 +77,45 @@ export default function Home() {
         } else {
           TweenMax.to(
             value,
-            .8,
             {
               y: -150,
               x: 435,
-              delay: .1
+              
             }
           )
 
           TweenMax.to(
             value2,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
 
           TweenMax.to(
             value3,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
 
           TweenMax.to(
             value4,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           TweenMax.to(
             value5,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           return;
@@ -138,11 +132,10 @@ export default function Home() {
           let value = btnRefs.current[id]
           TweenMax.to(
             value,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           setIdCheck(null);
@@ -150,48 +143,43 @@ export default function Home() {
         } else {
           TweenMax.to(
             value,
-            .8,
             {
               y: -150,
               x: 322,
-              delay: .1
+              
             }
           )
           TweenMax.to(
             value1,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           TweenMax.to(
             value3,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
 
           TweenMax.to(
             value4,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           TweenMax.to(
             value5,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           // setcheck(!check);
@@ -205,11 +193,10 @@ export default function Home() {
           let value = btnRefs.current[id]
           TweenMax.to(
             value,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           setIdCheck(null);
@@ -218,50 +205,45 @@ export default function Home() {
         else {
           TweenMax.to(
             value,
-            .8,
             {
               y: -150,
               x: 215,
-              delay: .1
+              
             }
           )
 
           TweenMax.to(
             value1,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
 
           TweenMax.to(
             value2,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
 
           TweenMax.to(
             value4,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           TweenMax.to(
             value5,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           return;
@@ -274,11 +256,10 @@ export default function Home() {
           let value = btnRefs.current[id]
           TweenMax.to(
             value,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           setIdCheck(null);
@@ -287,50 +268,45 @@ export default function Home() {
         else {
           TweenMax.to(
             value,
-            .8,
             {
               y: -150,
               x: 90,
-              delay: .1
+              
             }
           )
           TweenMax.to(
             value1,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
 
           TweenMax.to(
             value2,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
 
           )
           TweenMax.to(
             value5,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
 
           TweenMax.to(
             value3,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           // setcheck(!check);
@@ -344,11 +320,10 @@ export default function Home() {
           let value = btnRefs.current[id]
           TweenMax.to(
             value,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
           setIdCheck(null);
@@ -356,50 +331,45 @@ export default function Home() {
         } else {
           TweenMax.to(
             value,
-            .8,
             {
               y: -150,
               x: 0,
-              delay: .1
+              
             }
           )
           TweenMax.to(
             value1,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
   
           TweenMax.to(
             value2,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
   
           TweenMax.to(
             value3,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
           )
   
           TweenMax.to(
             value4,
-            .8,
             {
               y: 0,
               x: 0,
-              delay: .1
+              
             }
   
           )
@@ -412,11 +382,11 @@ export default function Home() {
       let value = btnRefs.current[id]
       TweenMax.to(
         value,
-        .8,
         {
+          duration: .001,
           y: 0,
           x: 0,
-          delay: .1
+          
         }
       )
       setcheck(!check);
