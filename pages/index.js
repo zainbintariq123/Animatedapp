@@ -47,6 +47,58 @@ export default function Home() {
     rule = CSSRulePlugin.getRule("span:after");
   }
 
+  useEffect(()=>{
+    let value1 = btnRefs.current[0];
+    let value2 = btnRefs.current[1];
+    let value3 = btnRefs.current[2];
+    let value4 = btnRefs.current[3];
+    let value5 = btnRefs.current[4];
+
+    TweenMax.to(
+      value1,
+      {
+        delay: .7,
+        y: -10, 
+        ease: Power3.easeInOut
+      }
+    )
+    TweenMax.to(
+      value2,
+      {
+        delay: .8,
+        y: -10, 
+        ease: Power3.easeInOut
+      }
+    )
+    TweenMax.to(
+      value3,
+      {
+        delay: .9,
+        y: -10, 
+        ease: Power3.easeInOut
+      }
+    )
+    TweenMax.to(
+      value4,
+      {
+        delay: .10,
+        y: -10, 
+        ease: Power3.easeInOut
+
+      }
+    )
+    TweenMax.to(
+      value5,
+      {
+        delay: .11,
+        y: -10, 
+        ease: Power3.easeInOut
+
+      }
+    )
+
+  },[])
+
   const changePlace = (id) => {
 
     let value = btnRefs.current[id];
@@ -67,9 +119,10 @@ export default function Home() {
           TweenMax.to(
             value,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
-              
             }
           )
           setIdCheck(null);
@@ -78,24 +131,28 @@ export default function Home() {
           TweenMax.to(
             value,
             {
-              y: -150,
-              x: 435,
-              
+              duration: .4,
+              y: -125,
+              x: 392,
+              ease: Power3.easeInOut 
             }
           )
 
           TweenMax.to(
             value2,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
-              
             }
           )
 
           TweenMax.to(
             value3,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -105,6 +162,8 @@ export default function Home() {
           TweenMax.to(
             value4,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -113,6 +172,8 @@ export default function Home() {
           TweenMax.to(
             value5,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -133,6 +194,8 @@ export default function Home() {
           TweenMax.to(
             value,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -144,14 +207,18 @@ export default function Home() {
           TweenMax.to(
             value,
             {
-              y: -150,
-              x: 322,
+              duration: .4,
+              ease: Power3.easeInOut,
+              y: -126,
+              x: 272,
               
             }
           )
           TweenMax.to(
             value1,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -160,6 +227,8 @@ export default function Home() {
           TweenMax.to(
             value3,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -169,6 +238,8 @@ export default function Home() {
           TweenMax.to(
             value4,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -177,6 +248,8 @@ export default function Home() {
           TweenMax.to(
             value5,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -194,6 +267,8 @@ export default function Home() {
           TweenMax.to(
             value,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -206,8 +281,10 @@ export default function Home() {
           TweenMax.to(
             value,
             {
-              y: -150,
-              x: 215,
+              duration: .4,
+              ease: Power3.easeInOut,
+              y: -126,
+              x: 155,
               
             }
           )
@@ -215,6 +292,8 @@ export default function Home() {
           TweenMax.to(
             value1,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -224,6 +303,8 @@ export default function Home() {
           TweenMax.to(
             value2,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -233,6 +314,8 @@ export default function Home() {
           TweenMax.to(
             value4,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -241,6 +324,8 @@ export default function Home() {
           TweenMax.to(
             value5,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -257,6 +342,8 @@ export default function Home() {
           TweenMax.to(
             value,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -269,14 +356,18 @@ export default function Home() {
           TweenMax.to(
             value,
             {
-              y: -150,
-              x: 90,
+              duration: .4,
+              ease: Power3.easeInOut,
+              y: -126,
+              x: 44,
               
             }
           )
           TweenMax.to(
             value1,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -286,6 +377,8 @@ export default function Home() {
           TweenMax.to(
             value2,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -295,6 +388,8 @@ export default function Home() {
           TweenMax.to(
             value5,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -304,6 +399,8 @@ export default function Home() {
           TweenMax.to(
             value3,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -321,6 +418,8 @@ export default function Home() {
           TweenMax.to(
             value,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -332,14 +431,18 @@ export default function Home() {
           TweenMax.to(
             value,
             {
-              y: -150,
-              x: 0,
+              duration: .4,
+              ease: Power3.easeInOut,
+              y: -126,
+              x: -55,
               
             }
           )
           TweenMax.to(
             value1,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -349,6 +452,8 @@ export default function Home() {
           TweenMax.to(
             value2,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -358,6 +463,8 @@ export default function Home() {
           TweenMax.to(
             value3,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -367,6 +474,8 @@ export default function Home() {
           TweenMax.to(
             value4,
             {
+              duration: .4,
+              ease: Power3.easeInOut,
               y: 0,
               x: 0,
               
@@ -383,7 +492,8 @@ export default function Home() {
       TweenMax.to(
         value,
         {
-          duration: .001,
+          duration: .4,
+          ease: Power3.easeInOut,
           y: 0,
           x: 0,
           
@@ -410,17 +520,17 @@ export default function Home() {
       <main >
         <div className="bg-red-600 flex flex-col h-screen items-center justify-center">
           <div className="flex flex-row items-center justify-center w-full">
-            <div className="w-2/6">
+            <div className="w-1/4">
               <h2
-                className="font-extrabold text-4xl ">
+                className="font-extrabold text-2xl text-white">
                 Don't store tomatoes in the as they will lose their taste
                 </h2>
             </div>
             <div className={`${styles._border}`}>
-              <span className="border-b-2 px-10"></span>
+              <span className="border-b-2 ml-4 px-14"></span>
             </div>
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-row mt-6">
             {
               buttons.map((item, id) => (
                 <div ref={addToRef}>
