@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 import { TweenMax, Power3, gsap } from 'gsap';
 // import  CSSRulePlugin  from 'gsap/CSSRulePlugin';
 import { CSSRulePlugin } from "gsap/dist/CSSRulePlugin";
-import {ScrollTrigger} from 'gsap/dist/scrollTrigger';
 
 if(typeof window !== 'undefined') {
   gsap.registerPlugin(CSSRulePlugin);
@@ -64,11 +63,7 @@ export default function Home() {
         ease: Power3.easeInOut,
         y:-200,
         rotate: 360,
-        duration: 3,
-        // ScrollTrigger: {
-        //   trigger: "value1",
-        //   toggleActions: "restart pause resume" 
-        // } 
+        duration: 3
       }
     )
     TweenMax.to(
